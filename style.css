@@ -1,0 +1,204 @@
+/* General Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #e6f7ff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #3399ff;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* File Upload Section */
+.file-upload {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.file-upload label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Filters Section */
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter label {
+  font-weight: bold;
+}
+
+select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #f0faff;
+  color: #333;
+}
+
+button {
+  background-color: #66b3ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3399ff; /* Slightly darker blue */
+}
+
+/* Job List */
+.job-list {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Job Item */
+.job-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.job-item:hover {
+  background-color: #f0faff;
+}
+
+.job-item:last-child {
+  border-bottom: none;
+}
+
+/* Job Item Styling */
+.job-item strong {
+  color: #3399ff;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff6666;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.modal p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.modal button {
+  background-color: #ff6666;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #e04444;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal-overlay.active {
+  display: block;
+}
+
+/* Sort Section */
+.sort {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.sort label {
+  font-weight: bold;
+}
